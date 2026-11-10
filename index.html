@@ -4,41 +4,91 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>SHS Gr. 12 Graduation Ball 2027</title>
+  <meta name="description" content="Ticket sales opening soon. Online registration and ticketing will open here soon. Please watch for the official announcement from your class representatives.">
+  <meta name="robots" content="noindex">
   <style>
+    :root {
+      --navy: #0a1628;
+      --gold: #d4af37;
+      --gold-soft: #e8d48b;
+      --white: #f7f3e8;
+      --muted: #c9d4e8;
+    }
+
+    * { box-sizing: border-box; }
+
     html, body {
       margin: 0;
       padding: 0;
+      min-height: 100%;
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    body {
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+      font-family: Georgia, "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
+    }
+
+    .page {
       width: 100%;
-      height: 100%;
-      background: #0a1628;
-      overflow: hidden;
+      max-width: 640px;
+      text-align: center;
     }
-    iframe {
+
+    .rule {
       display: block;
-      width: 100vw;
-      height: 100dvh;
+      width: 72px;
+      height: 1px;
+      margin: 0 auto 28px;
+      background: var(--gold);
       border: 0;
-      background: #0a1628;
     }
-    .fallback {
-      position: fixed;
-      right: 12px;
-      bottom: 12px;
-      margin: 0;
-      font: 13px/1.4 system-ui, -apple-system, sans-serif;
-      z-index: 1;
+
+    .title {
+      margin: 0 0 28px;
+      font-size: clamp(0.8rem, 2.4vw, 0.95rem);
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      line-height: 1.6;
     }
-    .fallback a {
-      color: #c9d4e8;
-      text-decoration: underline;
+
+    h1 {
+      margin: 0 0 28px;
+      font-size: clamp(2rem, 7vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+      color: var(--white);
+    }
+
+    .rule-after {
+      margin: 0 auto 32px;
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 28em;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+      line-height: 1.7;
+      color: var(--muted);
     }
   </style>
 </head>
 <body>
-  <iframe
-    src="https://script.google.com/macros/s/AKfycbx7NZme-fPizY2lUMRYXl2tzjTBKZOp4l561EQTPsC9nTxmGC_Zk7-lmayiImbEQuRn/exec"
-    title="SHS Gr. 12 Graduation Ball 2027"
-    allow="camera"></iframe>
-  <p class="fallback"><a href="https://script.google.com/macros/s/AKfycbx7NZme-fPizY2lUMRYXl2tzjTBKZOp4l561EQTPsC9nTxmGC_Zk7-lmayiImbEQuRn/exec">Open registration</a></p>
+  <main class="page">
+    <hr class="rule" aria-hidden="true">
+    <p class="title">SHS Gr. 12 Graduation Ball 2027</p>
+    <h1>Ticket sales opening soon</h1>
+    <hr class="rule rule-after" aria-hidden="true">
+    <p>Online registration and ticketing will open here soon. Please watch for the official announcement from your class representatives.</p>
+  </main>
 </body>
 </html>
